@@ -8,6 +8,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'majutsushi/tagbar'
 Plugin 'fatih/vim-go'
 Plugin 'jiangmiao/auto-pairs'
@@ -26,6 +27,8 @@ Plugin 'leafgarland/typescript-vim'
 Plugin 'Chiel92/vim-autoformat'
 Plugin 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plugin 'neoclide/coc.nvim', {'branch': 'release'}
+Plugin 'arcticicestudio/nord-vim'
+Plugin 'ryanoasis/vim-devicons'
 call vundle#end()            " required
 
 filetype plugin indent on    " required
@@ -41,6 +44,10 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 map <C-n> :NERDTreeToggle<CR>
+noremap <C-h> z.<CR>
+noremap <C-k> zt<CR>
+noremap <C-j> zb<CR>
+map <Space> <Leader>
 noremap <Leader>y "*y
 noremap <Leader>p "*p
 noremap <Leader>Y "+y
@@ -53,6 +60,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 nmap <Leader>fo <Plug>(Prettier)
 syntax on
 "let g:airline_theme='afterglow'
+let g:airline_powerline_fonts = 1
 let g:rust_clip_command = 'pbcopy'
 let g:rustfmt_autosave = 1
 " setting for golang
@@ -63,6 +71,7 @@ let g:go_highlight_function_calls = 1
 let g:go_fmt_command = "goimports"
 let g:go_highlight_fields = 1
 let g:syntastic_go_checkers = ['go']
+set encoding=UTF-8
 set clipboard=unnamedplus
 set relativenumber
 set nu
@@ -77,21 +86,27 @@ set background=dark
 set noswapfile
 map <C-a> <esc>ggVG<CR>
 set belloff=all
+set background=light
+"set termguicolors
+set backspace=2
+set backspace=indent,eol,start " backspace over everything in insert mode
+
 let g:afterglow_inherit_background=1
 let g:afterglow_blackout=1
 let g:afterglow_italic_comments=1
 let g:quantum_black=1
-set background=dark
-set termguicolors
-set backspace=2
-set backspace=indent,eol,start " backspace over everything in insert mode
 
+let g:nord_cursor_line_number_background = 1
+let g:nord_uniform_diff_background = 1
+let g:nord_italic = 1
+let g:nord_italic_comments = 1
 "colorscheme afterglow
-colorscheme quantum
-
-
+"colorscheme quantum
+colorscheme nord
+set guifont=DroidSansMono_Nerd_Font:h11
 set statusline+=%#warningmsg#
 set statusline+=%*
+
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
