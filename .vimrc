@@ -10,7 +10,6 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'majutsushi/tagbar'
-Plugin 'fatih/vim-go'
 Plugin 'jiangmiao/auto-pairs'
 "Plugin 'vim-syntastic/syntastic'
 Plugin 'tpope/vim-fugitive'
@@ -19,16 +18,13 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'tyrannicaltoucan/vim-quantum'
 Plugin 'tpope/vim-surround'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'easymotion/vim-easymotion'
-Plugin 'wakatime/vim-wakatime'
 Plugin 'rust-lang/rust.vim'
 Plugin 'Quramy/tsuquyomi'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'Chiel92/vim-autoformat'
 Plugin 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plugin 'neoclide/coc.nvim', {'branch': 'release'}
-Plugin 'arcticicestudio/nord-vim'
-Plugin 'ryanoasis/vim-devicons'
+"Plugin 'arcticicestudio/nord-vim'
 call vundle#end()            " required
 
 filetype plugin indent on    " required
@@ -82,11 +78,10 @@ set smarttab
 set expandtab
 set smartcase
 set t_Co=256
-set background=dark
+"set background=dark
 set noswapfile
 map <C-a> <esc>ggVG<CR>
 set belloff=all
-set background=light
 "set termguicolors
 set backspace=2
 set backspace=indent,eol,start " backspace over everything in insert mode
@@ -96,13 +91,13 @@ let g:afterglow_blackout=1
 let g:afterglow_italic_comments=1
 let g:quantum_black=1
 
-let g:nord_cursor_line_number_background = 1
-let g:nord_uniform_diff_background = 1
-let g:nord_italic = 1
-let g:nord_italic_comments = 1
+"let g:nord_cursor_line_number_background = 1
+"let g:nord_uniform_diff_background = 1
+"let g:nord_italic = 1
+"let g:nord_italic_comments = 1
 "colorscheme afterglow
 "colorscheme quantum
-colorscheme nord
+"colorscheme nord
 set guifont=DroidSansMono_Nerd_Font:h11
 set statusline+=%#warningmsg#
 set statusline+=%*
