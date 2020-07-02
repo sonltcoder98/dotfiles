@@ -1,0 +1,4 @@
+rust-analyzer.run
+rust-analyzer.analyzerStatus
+rust-analyzer.reload
+rust-analyzer.serverVersion
