@@ -1,12 +1,21 @@
 {
-  "diagnostics": {
-    "%2FUsers%2Fapple%2Frust": [
-      ":"
+  "extensions": {
+    "%2FUsers%2Fsonltcoder%2FIdeaProjects%2Fbot-warning": [
+      "   "
     ]
   },
-  "outline": {
-    "%2FUsers%2Fapple%2Frust%2Fblock-explorer": [
-      "q"
-    ]
+  "services": {
+    "%2FUsers%2Fsonltcoder%2Fgo": [
+      ":CocInstall"
+    ],
+    "%2FUsers%2Fsonltcoder": [
+      "qq",
+      "kkqqqkjj:q:q:qqqqkkkkkkkkkkkkjjk"
+    ],
+    "%2FUsers%2Fsonltcoder%2Fgo%2Fsrc%2Fgithub": {
+      "com%2Ftsocial%2Ftax_income": [
+        "j"
+      ]
+    }
   }
 }

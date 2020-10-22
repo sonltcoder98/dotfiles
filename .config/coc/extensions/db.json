@@ -1,0 +1,7 @@
+{
+  "extension": {
+    "coc-rust-analyzer": {
+      "disabled": false
+    }
+  }
+}
